@@ -1,0 +1,29 @@
+body {
+	background-color: #333;
+	color: #fff;
+	font-size: 36px;
+	font-family: 'Comfortaa', cursive;
+}
+
+.comfortaa-secondary-font {
+	font-family: 'Comfortaa', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+img {
+	width: 800px;
+	border-radius: 25px;
+	display: block;
+	margin: 0 auto;
+}
+
+p {
+	color: lime;
+}
+
+.First-word {
+	color: tomato;
+	text-decoration: underline;
+}

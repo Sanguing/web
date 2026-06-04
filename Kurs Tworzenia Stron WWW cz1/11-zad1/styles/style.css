@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.nav {
+	height: 50px;
+	background-color: #333;
+	text-align: center;
+	line-height: 50px;
+	font-size: 0;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+.nav-item a {
+	padding: 0 50px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 15px;
+	transition: color 0.3s;
+}
+
+.nav-item a:hover {
+	color: #0086f3;
+}
+
+.header-img {
+	position: relative;
+	height: 300px;
+	background-image: url('../src/mountain.jpg');
+	background-size: cover;
+	background-position: center 79%;
+}
+
+.header-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.header-bg {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(124, 120, 187, 0.25);
+}
+
+main {
+	width: 1200px;
+	margin: 50px auto;
+}
+
+main h2 {
+	margin-bottom: 30px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+.about-us-box {
+	margin: 40px 0;
+	position: relative;
+	height: 300px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center 50%;
+	border-top-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	overflow: hidden;
+}
+
+.header-text h1 {
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	letter-spacing: 2px;
+}
+
+.top {
+	background-image: url(../src/coffee.jpg);
+}
+.mid {
+	background-image: url(../src/phone.jpg);
+}
+.bot {
+	background-image: url(../src/laptop.jpg);
+}
+
+.about-us-text {
+	position: absolute;
+	bottom: 20px;
+	padding: 20px 40px;
+	text-align: center;
+	color: #fff;
+}
+
+.about-us-text h3 {
+	text-transform: uppercase;
+}
+
+.about-us-bg {
+	position: absolute;
+	bottom: 0;
+	height: 45%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+footer {
+	height: 80px;
+	line-height: 80px;
+	color: #ddd;
+	text-align: center;
+	background-color: #333;
+	font-size: 20px;
+}
+
+.icon-box a {
+	margin: 0 5px;
+	color: #ddd;
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.icon-box a:hover {
+	color: #0086f3;
+	transition: color 0.3s;
+}
+
+.pricing-table {
+	margin: 0 auto;
+}
+
+.pricing-table td {
+	padding: 10px 30px;
+}
+
+.contact-info {
+	text-align: center;
+	line-height: 40px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+.services-list {
+	margin: 0 auto;
+	width: 200px;
+}
