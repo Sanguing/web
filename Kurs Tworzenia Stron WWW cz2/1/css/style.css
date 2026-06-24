@@ -1,0 +1,40 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  font-family: sans-serif;
+}
+
+.square {
+  margin: 30px;
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  display: inline-block;
+}
+.square.gold {
+  background-color: gold;
+}
+.square.red {
+  background-color: red;
+  border-radius: 25px;
+  background-color: royalblue;
+}
+
+.square {
+  width: 400px;
+  height: 400px;
+}
+
+.succes {
+  background-color: gold;
+}
+
+.warning {
+  background-color: gold;
+}/*# sourceMappingURL=style.css.map */

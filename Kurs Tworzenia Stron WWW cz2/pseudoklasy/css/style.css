@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	color: #fff;
+	background-color: #333;
+}
+
+div {
+	margin: 50px;
+}
+
+p:first-child {
+	color: lime;
+}
+
+p:last-child {
+	color: gold;
+}
+
+p:first-of-type {
+	color: royalblue;
+}
+
+p:last-of-type {
+	color: tomato;
+}
+
+p:nth-child(odd) {
+	color: aquamarine;
+}
+
+p:nth-child(15) {
+	color: rebeccapurple;
+}
+
+/* liczy od tyłu */
+p:nth-last-child(5) {
+	color: lime;
+}
+
+p:nth-child(5n + 1) {
+	color: black;
+}
+
+p:nth-last-of-type(2) {
+	color: darkblue;
+}
+
+/*# sourceMappingURL=style.css.map */

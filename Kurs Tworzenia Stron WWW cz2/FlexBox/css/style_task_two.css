@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+	font-size: 50px;
+	margin-top: 40px;
+}
+
+section {
+	display: flex;
+	height: 22.5vh;
+	margin: 25px;
+	border: black 5px solid;
+}
+
+.square {
+	flex-basis: 150px;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.one {
+	background-color: gold;
+}
+
+.two {
+	background-color: lime;
+}
+
+.three {
+	background-color: royalblue;
+}
+
+.four {
+	background-color: tomato;
+}
+
+.first {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.first .two {
+	flex-grow: 1;
+}
+
+.first .four {
+	flex-grow: 1;
+}
+
+.second {
+	justify-content: space-around;
+	align-items: center;
+}
+
+.third {
+	flex-direction: row-reverse;
+	justify-content: stretch;
+	justify-content: flex-start;
+}
+
+.third .three {
+	order: 1000;
+}
+
+.third .one {
+	flex-grow: 0.5;
+}
+
+.third .four {
+	flex-grow: 1.5;
+}
+
+.fourth {
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+.fourth .two {
+	align-self: flex-start;
+}
+
+.fourth .three {
+	align-self: center;
+}
+

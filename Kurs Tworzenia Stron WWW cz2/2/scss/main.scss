@@ -1,0 +1,38 @@
+@import './reset';
+ 
+$heading-color: gold;
+$oddSection: deepskyblue;
+$evenSection: dodgerblue;
+ 
+body {
+    font-family: sans-serif;
+}
+ 
+h1 {
+    font-size: 3rem;
+    color: $heading-color;
+}
+
+@mixin circle {
+    margin: 30px auto;
+    width: 100px;
+    height: 100px;
+    background-color: lime;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.circle {
+    @include circle
+}
+ 
+h2 {
+    font-size: 2.4em;
+    color: $heading-color;
+}
+ 
+sectio {
+    height: 25vh;
+    text-align: center;
+}
+ 

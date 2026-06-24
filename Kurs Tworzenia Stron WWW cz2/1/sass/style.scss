@@ -1,0 +1,64 @@
+//import = deprecated - bad effectivness
+// @import './colors';
+@use './colors' as colors;
+$square-height: 200px;
+$square-width: 200px;
+
+$mixin-width: 300px;
+$mixin-height: 300px;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #333;
+	font-family: sans-serif;
+}
+
+@mixin addons {
+	border-radius: 25px;
+	background-color: colors.$blue;
+}
+
+@mixin color($square-gold-color) {
+	background-color: colors.$square-gold-color;
+}
+
+@mixin size($mixin-height, $mixin-width) {
+	width: $mixin-width;
+	height: $mixin-height;
+}
+
+.square {
+	margin: 30px;
+	width: $square-width;
+	height: $square-height;
+	border: 5px solid black;
+	display: inline-block;
+
+	&.gold {
+		background-color: colors.$square-gold-color;
+	}
+
+	&.red {
+		background-color: colors.$square-red-color;
+		@include addons;
+	}
+}
+
+.square {
+	@include size(400px, 400px);
+}
+
+// didnt include those classes in .html
+
+.succes {
+	@include color(colors.$green);
+}
+
+.warning {
+	@include color(colors.$red);
+}

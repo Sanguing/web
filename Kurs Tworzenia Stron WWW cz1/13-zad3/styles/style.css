@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.long {
+	position: absolute;
+	top: 250px;
+	left: 50px;
+	height: 600px;
+	width: 150px;
+	padding: 10px;
+	background-color: tomato;
+	overflow: hidden;
+	transition: height 0.4s;
+}
+
+div.big {
+	position: absolute;
+	top: 250px;
+	right: 50px;
+	height: 600px;
+	width: 800px;
+	background-color: royalblue;
+}
+
+.child {
+	height: 200px;
+	border: 3px solid black;
+    transition: background-color 1s;
+}
+
+
+.first + .child{
+	background-color: limegreen;
+}
+
+.long:hover {
+	height: 200px;
+}
+
+div.first:hover ~ .child {
+	background-color: gold;
+}

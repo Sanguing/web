@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: #333;
+	font-size: 35px;
+	color: white;
+    
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+}
+div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+    font-weight: bold;
+}

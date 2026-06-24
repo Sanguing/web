@@ -7,6 +7,14 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+section {
+	scroll-margin-top: 60px;
+}
+
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
@@ -47,10 +55,13 @@ body {
 
 /* nawigacja */
 nav {
+	position: sticky;
+	top: 0;
 	height: 60px;
 	line-height: 60px;
 	background-color: #ddd;
 	text-align: center;
+	z-index: 10;
 }
 
 .burger-icon {
@@ -96,6 +107,7 @@ main {
 
 .products h3 {
 	text-transform: uppercase;
+	transition: transform 0.5s;
 }
 
 .product {
@@ -120,6 +132,21 @@ main {
 
 .fourth-product {
 	background-image: url('../src/laptop-headphones-small.jpg');
+}
+.contact {
+	margin: 20px;
+	text-align: center;
+}
+
+.contact h3 {
+	margin: 20px 0 5px;
+	text-transform: uppercase;
+}
+/*footer */
+footer {
+	padding: 30px 10px;
+	text-align: center;
+	background-color: #ddd;
 }
 
 @media (min-width: 768px) {
@@ -163,9 +190,12 @@ main {
 }
 
 @media (min-width: 992px) {
+	.product-box {
+		font-size: 0;
+	}
 	.product {
 		display: inline-block;
-		width: 45%;
+		width: 50%;
 	}
 }
 
@@ -177,4 +207,8 @@ main {
 	.hero-text p {
 		font-size: 20px;
 	}
+}
+
+.product:hover h3 {
+	transform: scale(1.7);
 }
