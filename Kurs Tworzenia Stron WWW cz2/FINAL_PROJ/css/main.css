@@ -261,6 +261,7 @@ main {
   z-index: 3;
 }
 .team .hero-img .card-group .card {
+  margin: 10px;
   transition: scale 0.3s;
 }
 .team .hero-img .card-group .card img {
@@ -283,6 +284,9 @@ main {
   text-transform: uppercase;
   text-align: center;
 }
+.team .hero-img .card-group .card .card-body {
+  height: 150px;
+}
 .team .hero-img .card-group .card:hover {
   scale: 0.96;
 }
@@ -296,6 +300,97 @@ main {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.achievements {
+  background-color: #ebecf2;
+}
+.achievements .achievements-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.achievements .achievements-list .achievement-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.achievements .achievements-list .achievement-element i {
+  margin-top: 20px;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.achievements .achievements-list .achievement-element .achievements-number {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.achievements .achievements-list .achievement-element .achievements-text {
+  margin-top: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.contact {
+  position: relative;
+  background-image: url("../img/skyline-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+  color: #fff;
+}
+.contact .contact-shadow {
+  position: absolute;
+  z-index: -5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0.9);
+}
+.contact .section-title {
+  position: relative;
+}
+.contact .underline {
+  position: relative;
+}
+.contact .contact-us {
+  position: relative;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.contact .contact-us .contact-item {
+  margin: 30px 0;
+}
+.contact .contact-us h5 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.contact .contact-us p {
+  font-size: 18px;
+}
+.contact .contact-us .social-media {
+  margin-bottom: 20px;
+}
+.contact .contact-us .social-media a {
+  font-size: 30px;
+  padding: 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+.contact .contact-us .social-media a:hover {
+  color: #039dff;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    background-image: url("../img/skyline-large.jpg");
+  }
+}
 @media (min-width: 768px) {
   .hero-text hero-text {
     font-size: 42px;

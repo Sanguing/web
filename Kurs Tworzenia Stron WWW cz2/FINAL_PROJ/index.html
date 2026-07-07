@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -249,11 +249,11 @@
 
         </section>
 
-        <section class="team">
+        <section id="team" class="team">
             <div class="hero-img">
                 <h2 class="section-title pt-5">team</h2>
                 <div class="underline"></div>
-                <div class="card-group d-flex m-5">
+                <div class="card-group team-carousel d-flex m-5">
                     <div class="card">
                         <img src=".\img\team\adult-2449725_1920.jpg" class="card-img-top" alt="ceo looking happy">
                         <div class="card-body">
@@ -327,18 +327,102 @@
             </div>
         </section>
 
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <section id="achievements" class="achievements">
+            <h2 class="section-title mt-5">osiągnięcia</h2>
+            <div class="underline"></div>
+            <div class="container">
+                <div class="row achievements-list">
+                    <div class="achievement-element col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <div class="achievements-number">100%</div>
+                        <div class="achievements-text">zadowolonych klientów</div>
+                    </div>
+                    <div class="achievement-element col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <i class="fa-solid fa-trophy"></i>
+                        <div class="achievements-number">37</div>
+                        <div class="achievements-text">zdobytych nagród</div>
+                    </div>
+                    <div class="achievement-element col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <i class="fa-solid fa-users text-center"></i>
+                        <div class="achievements-number">143</div>
+                        <div class="achievements-text">pracowników</div>
+                    </div>
+                    <div class="achievement-element col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <i class="fa-solid fa-building"></i>
+                        <div class="achievements-number">7</div>
+                        <div class="achievements-text">nowoczesnych biur</div>
+                    </div>
+                    <div class="achievement-element col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <i class="fa-solid fa-dice"></i>
+                        <div class="achievements-number">58</div>
+                        <div class="achievements-text">stworzonych gier</div>
+                    </div>
+                    <div class="achievement-element col-sm-12 col-md-6 col-lg-4 col-xl-2">
+                        <i class="fa-solid fa-share-nodes"></i>
+                        <div class="achievements-number">80.000</div>
+                        <div class="achievements-text">fanów social media</div>
+                    </div>
+                </div>
 
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact py-5">
+            <h2 class="section-title">kontakt</h2>
+            <div class="underline"></div>
+            <div class="contact-shadow"></div>
+            <div class="container">
+                <div class="row contact-us text-center">
+                    <div class="col-sm-6 col-lg-4 contact-item order-1">
+                        <h5>główna siedziba</h5>
+                        <p>ul. Sezamkowa</p>
+                        <p>00-000 Kraków</p>
+                        <p>+48 000 000 000</p>
+                        <p>mail@mail.pl</p>
+                    </div>
+                    <div class="col-lg-4 order-0 order-lg-1">
+                        <h5>social media</h5>
+                        <div class="social-media">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4 contact-item order-1">
+                        <h5>siedziba w Londynie</h5>
+                        <p>Milk Street 0</p>
+                        <p>00-000 London</p>
+                        <p>+44 000 000 000</p>
+                        <p>mail@mail.pl</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
 
-    <i class="fa-solid fa-chevron-down position-fixed bot-0"></i>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <footer class="bg-dark text-light py-4 text-center">
+        <p class="mb-0">&copy; 2045 | ProGamers</p>
+        <div class="container">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repellendus nisi eos sed, quaerat fugiat
+            cumque
+            nam qui, doloribus quasi nemo blanditiis modi esse vero eveniet facilis porro natus quisquam.
+        </div>
 
+
+    </footer>
+
+    <i class="fa-solid fa-chevron-down position-fixed bot-0"></i>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/slick.js"></script>
+
 </body>
 
 </html>
