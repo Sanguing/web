@@ -1,6 +1,6 @@
-@use './colors' as *;
-@use './components' as *;
-@use './mixins' as *;
+@use "./colors" as *;
+@use "./components" as *;
+@use "./mixins" as *;
 
 *,
 *::before,
@@ -13,14 +13,16 @@
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-size: 1.6rem;
 }
 
 //NAV
+
 .nav {
 	position: fixed;
 	top: 0;
@@ -33,6 +35,7 @@ body {
 	transition: 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
 	background-image: $blue-gradient-solid;
 	z-index: 100;
+	overflow: hidden;
 
 	&--active {
 		transform: translateX(0);
@@ -56,7 +59,7 @@ body {
 			transform: scaleY(0);
 			background-color: $pure-white;
 			transition: transform 0.3s;
-			content: '';
+			content: "";
 		}
 
 		&:hover::before {
@@ -130,6 +133,12 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color: $dark;
+}
+
 // HEADER
 .header {
 	position: relative;
@@ -141,11 +150,11 @@ body {
 	height: 75vh;
 	text-align: center;
 	color: $pure-white;
-	@include heroImages('../img/hotel-small.jpg');
+	@include heroImages("../img/hotel-small.jpg");
 	background-attachment: scroll;
 
 	&__heading {
-		font-family: 'Dancing Script', cursive;
+		font-family: "Dancing Script", cursive;
 		font-size: 4.8rem;
 		font-weight: 300;
 	}
@@ -201,13 +210,13 @@ body {
 .hero-img {
 	position: relative;
 	padding: 10em 2em;
-	@include heroImages('../img/polynesia_small.jpg');
+	@include heroImages("../img/polynesia_small.jpg");
 	text-align: center;
 	color: $pure-white;
 	overflow: hidden;
 
 	&__title {
-		font-family: 'Dancing Script', cursive;
+		font-family: "Dancing Script", cursive;
 		font-size: 4.8rem;
 		margin-bottom: 0.5em;
 	}
@@ -250,19 +259,19 @@ body {
 				opacity 1s;
 
 			&--first {
-				background-image: $light-blue-gradient, url('../img/olivves_water.jpg');
+				background-image: $light-blue-gradient, url("../img/olivves_water.jpg");
 			}
 
 			&--second {
-				background-image: $blue-gradient, url('../img/hawaii.jpg');
+				background-image: $blue-gradient, url("../img/hawaii.jpg");
 			}
 
 			&--third {
-				background-image: $purple-gradient, url('../img/boat.jpg');
+				background-image: $purple-gradient, url("../img/boat.jpg");
 			}
 
 			&-title {
-				font-family: 'Dancing Script', cursive;
+				font-family: "Dancing Script", cursive;
 				font-size: 2.8rem;
 			}
 
@@ -298,7 +307,7 @@ body {
 			&-title {
 				@include islandCardStyles;
 				top: 1.2em;
-				font-family: 'Dancing Script', cursive;
+				font-family: "Dancing Script", cursive;
 				font-size: 2.8rem;
 			}
 
@@ -340,7 +349,7 @@ body {
 
 .offers {
 	position: relative;
-	@include heroImages('../img/hammock_small.jpg');
+	@include heroImages("../img/hammock_small.jpg");
 	overflow: hidden;
 
 	.section-heading {
@@ -413,8 +422,8 @@ body {
 		padding: 2em;
 		border-radius: 8px;
 		box-shadow: 3px 3px 10px #2e2e2e2e;
-
 		transition: transform 0.3s;
+
 		&:hover {
 			transform: scale(0.95);
 		}
@@ -444,6 +453,107 @@ body {
 		margin-bottom: 1em;
 		font-size: 1.4rem;
 		color: $dark;
+	}
+}
+
+//CONTACT
+
+.contact {
+	position: relative;
+	background-color: $light-white;
+	overflow: hidden;
+
+	.white-block-left {
+		background-color: $dark;
+	}
+
+	&__form,
+	&__form-top {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__form-label {
+		margin-bottom: 0.5em;
+		text-transform: uppercase;
+	}
+
+	&__form-input {
+		@include contactForm;
+	}
+
+	&__form-textarea {
+		@include contactForm;
+		max-width: 100%;
+		width: 100%;
+		min-height: 150px;
+	}
+
+	&__form-btn {
+		align-self: flex-end;
+		padding: 1em;
+		width: 100%;
+		max-width: 300px;
+		color: $pure-white;
+		border: none;
+		border-radius: 8px;
+		background-color: $main-color;
+		cursor: pointer;
+
+		&::before {
+			background-color: $secondary-color;
+		}
+	}
+}
+
+// FOOTER
+
+.footer {
+	color: $pure-white;
+	background-color: $dark;
+	overflow: hidden;
+
+	.wrapper {
+		padding: 6em 2em 2em;
+	}
+
+	&__box {
+		font-size: 1.4rem;
+	}
+
+	&__box-desktop {
+		display: none;
+	}
+
+	&__box-title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		text-transform: uppercase;
+	}
+
+	&__box-social {
+		margin: 2em 0 1em;
+	}
+
+	&__box-link {
+		padding: 0em 0.3em;
+		font-size: 3.6rem;
+		color: $pure-white;
+		text-decoration: none;
+		transition: color 0.3s;
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:hover {
+			color: $light-white;
+		}
+	}
+
+	&__bottom-text {
+		padding: 2em;
+		text-align: center;
 	}
 }
 
@@ -562,6 +672,43 @@ body {
 			width: 45%;
 		}
 	}
+
+	.footer {
+		&__boxes {
+			display: flex;
+			justify-content: stretch;
+		}
+
+		&__box-desktop {
+			display: block;
+		}
+
+		&__box {
+			margin: 0em 2em;
+			width: 25%;
+
+			&:first-child {
+				width: 50%;
+			}
+		}
+
+		&__box-title {
+			font-size: 2.4rem;
+		}
+
+		&__box-list {
+			list-style: none;
+		}
+
+		&__box-list-item {
+			margin-bottom: 1em;
+
+			a {
+				color: $light-white;
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 @media (min-width: 992px) {
@@ -571,7 +718,7 @@ body {
 	}
 
 	.header {
-		background-image: $blue-gradient, url('../img/hotel-large.jpg');
+		background-image: $blue-gradient, url("../img/hotel-large.jpg");
 
 		&__heading {
 			font-size: 10rem;
@@ -607,7 +754,7 @@ body {
 
 	.hero-img {
 		padding: 40rem 2em;
-		background-image: $blue-gradient, url('../img/polynesia_large.jpg');
+		background-image: $blue-gradient, url("../img/polynesia_large.jpg");
 
 		&__title {
 			font-size: 7.2rem;
@@ -620,7 +767,7 @@ body {
 	}
 
 	.offers {
-		background-image: $blue-gradient, url('../img/hammock_large.jpg');
+		background-image: $blue-gradient, url("../img/hammock_large.jpg");
 
 		&__option {
 			&-img {

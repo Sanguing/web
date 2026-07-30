@@ -1,4 +1,4 @@
-@use './colors' as *;
+@use "./colors" as *;
 
 .wrapper {
 	margin: 0 auto;
@@ -19,8 +19,8 @@
 	}
 
 	&-right {
-		bottom: 0;
-		left: -50px;
+		top: 0;
+		right: -50px;
 		transform: skew(45deg);
 	}
 }
@@ -33,7 +33,7 @@
 
 	&::before {
 		display: block;
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
