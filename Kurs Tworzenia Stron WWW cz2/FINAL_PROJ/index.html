@@ -13,13 +13,14 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navId" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
 
-    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3" id="navId">
+        <div class="container" data-aos="fade-down">
             <a class="navbar-brand" href="#"><i class="fa-solid fa-headset"></i>PRO<span class="second-part">
                     GAMERS</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -28,7 +29,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="#home">Home</a>
                     <a class="nav-link" href="#aboutus">o nas</a>
                     <a class="nav-link" href="#portfolio">portfolio</a>
                     <a class="nav-link" href="#prices">ceny</a>
@@ -42,19 +43,20 @@
 
     <header id="home" class="hero-img-header">
         <div class="hero-text text-center p-2">
-            <h1>witajcie w pro<span class="second-part">gamers</span></h1>
-            <p>W miejscu, gdzie tworzymy z pasją</p>
-            <a href="#aboutus" class="btn btn-outline-light mt-2 text-uppercase">poznaj nas</a>
+            <h1 data-aos="fade-left" data-aos-delay="200">witajcie w pro<span class="second-part">gamers</span></h1>
+            <p data-aos="fade-right" data-aos-delay="400">W miejscu, gdzie tworzymy z pasją</p>
+            <a href="#aboutus" class="btn btn-outline-light mt-2 text-uppercase" data-aos="fade-up"
+                data-aos-delay="600">poznaj nas</a>
         </div>
         <div class="hero-shadow"></div>
 
 
-        <a href="#aboutus"><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="#aboutus"><i class="fa-solid fa-chevron-down bounce-top"></i></a>
     </header>
 
 
     <main>
-        <section id="aboutus" class="aboutus bg-light py-5">
+        <section id="aboutus" class="aboutus bg-light py-5" data-aos="flip-down" data-aos-delay="500">
             <div class="container">
                 <h2 class="section-title">O nas</h2>
                 <div class="underline"></div>
@@ -96,36 +98,36 @@
                         <p class="about-us-hero-text">Zachowujemy świetne relacje z naszymi klientami!</p>
                     </div>
                 </div>
-        </section>
-
-        <section class="aboutus-hero py-5">
-            <div class="container py-5">
-                <h2 class="section-title">tworzymy gry na platformy</h2>
-                <div class="underline"></div>
-                <div class="row">
-                    <div class="col-lg-4 text-center aboutus-hero-item">
-                        <p class="aboutus-hero-title mb-1">PC</p>
-                        <p><i class="fa-brands fa-steam"></i></p>
-                        <p class="aboutus-hero-text">Graj ze znajomymi na swoim blaszaku!</p>
-                    </div>
-
-                    <div class="col-lg-4 text-center aboutus-hero-item">
-                        <p class="aboutus-hero-title mb-1">PlayStation</p>
-                        <p><i class="fa-brands fa-playstation"></i></p>
-                        <p class="aboutus-hero-text">Gry świetnie prezentują się na- konsoli od Sony!</p>
-                    </div>
-
-                    <div class="col-lg-4 text-center aboutus-hero-item">
-                        <p class="aboutus-hero-title mb-1">Xbox</p>
-                        <p><i class="fa-brands fa-xbox"></i></p>
-                        <p class="aboutus-hero-text">Fani Xboxa spędzą z nami mnóstwo godzin!</p>
-                    </div>
-                </div>
-                <div class="hero-shadow"></div>
             </div>
+            <section class="aboutus-hero" data-aos="zoom-in" data-aos-delay="500">
+                <div class="container py-5">
+                    <h2 class="section-title">tworzymy gry na platformy</h2>
+                    <div class="underline"></div>
+                    <div class="row">
+                        <div class="col-lg-4 text-center aboutus-hero-item">
+                            <p class="aboutus-hero-title mb-1">PC</p>
+                            <p><i class="fa-brands fa-steam"></i></p>
+                            <p class="aboutus-hero-text">Graj ze znajomymi na swoim blaszaku!</p>
+                        </div>
+
+                        <div class="col-lg-4 text-center aboutus-hero-item">
+                            <p class="aboutus-hero-title mb-1">PlayStation</p>
+                            <p><i class="fa-brands fa-playstation"></i></p>
+                            <p class="aboutus-hero-text">Gry świetnie prezentują się na- konsoli od Sony!</p>
+                        </div>
+
+                        <div class="col-lg-4 text-center aboutus-hero-item">
+                            <p class="aboutus-hero-title mb-1">Xbox</p>
+                            <p><i class="fa-brands fa-xbox"></i></p>
+                            <p class="aboutus-hero-text">Fani Xboxa spędzą z nami mnóstwo godzin!</p>
+                        </div>
+                    </div>
+                    <div class="hero-shadow"></div>
+                </div>
+            </section>
         </section>
 
-        <section id="portfolio" class="portfolio-carousel py-5">
+        <section id="portfolio" class="portfolio-carousel py-5" data-aos="zoom-out" data-aos-delay="500">
 
             <h2 class="section-title">portfolio</h2>
             <div class="underline"></div>
@@ -193,7 +195,7 @@
             </div>
         </section>
 
-        <section id="prices" class="prices py-5 bg-light">
+        <section id="prices" class="prices py-5 bg-light" data-aos="fade-zoom-in" data-aos-delay="500">
             <h2 class="section-title">ceny</h2>
             <div class="underline"></div>
 
@@ -243,13 +245,15 @@
                 <p class="price-info text-center">Skorzystaj z jednego z trzech głównych pakietów lub <a
                         href="#contact">skontaktuj
                         się</a> z nami i ustal warunki indywidualne!</p>
-                <p class="text-muted text-center">Pakiet <strong>FULL PACK</strong> zawiera wersję gier na urządzenia
+                <p class="text-muted text-center">Pakiet <strong>FULL PACK</strong> zawiera wersję gier na
+                    urządzenia
                     mobilne, PC oraz konsole.</p>
             </div>
 
         </section>
 
-        <section id="team" class="team">
+        <section id="team" class="team" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
+            data-aos-delay="500">
             <div class="hero-img">
                 <h2 class="section-title pt-5">team</h2>
                 <div class="underline"></div>
@@ -258,7 +262,8 @@
                         <img src=".\img\team\adult-2449725_1920.jpg" class="card-img-top" alt="ceo looking happy">
                         <div class="card-body">
                             <h5 class="card-title">ceo</h5>
-                            <p class="card-text">Szef szefów. ikt nie zna jego imienia. Podwładni mówią na niego "Pan
+                            <p class="card-text">Szef szefów. ikt nie zna jego imienia. Podwładni mówią na niego
+                                "Pan
                                 Prezes".
                             </p>
                         </div>
@@ -300,7 +305,8 @@
                             alt="NPC at laptop looking at you">
                         <div class="card-body">
                             <h5 class="card-title">tomek</h5>
-                            <p class="card-text">To jest Tomek. Nike oprócz prezesa nie wie, czym zajmuje się Tomek.</p>
+                            <p class="card-text">To jest Tomek. Nike oprócz prezesa nie wie, czym zajmuje się Tomek.
+                            </p>
                         </div>
                         <div class="card-footer
                     border-secondary-color d-flex justify-content-center text-center">
@@ -413,15 +419,23 @@
 
     </footer>
 
-    <i class="fa-solid fa-chevron-down position-fixed bot-0"></i>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./js/script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/slick.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            offset: 200,
+            once: true
+        });
+    </script>
+    <script src="./js/script.js"></script>
 
 </body>
 
