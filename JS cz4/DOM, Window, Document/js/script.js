@@ -59,5 +59,9 @@ console.log(heading);
 console.log(tab);
 console.log(jakasZmienna, jakasZmiennaDwa);
 
+// TWORZENIE ELEMENTÓW
+
+
+
 
 // PS zanim zaczniesz next lekcje to przypomnij sobie poprzednie lekcje z poprzedniego foldery
