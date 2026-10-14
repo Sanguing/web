@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #222;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    position: relative;
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: limegreen;
+    bottom: -10px;
+    left: 0;
+}
+
+h1 + p {
+    margin: 20px 10px;
+    font-weight: bold;
+}
+
+.test {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.last-el {
+    background-color: royalblue;
+    padding: 20px 40px;
+    font-size: 48px;
+}
